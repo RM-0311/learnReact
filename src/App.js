@@ -36,17 +36,17 @@ function App() {
 
       {showEvents && (
         <div>
-          <button onClick={() => setShowEvents(false)}>hide events</button>
+          <button onClick={() => setShowEvents(false)}>Hide Events</button>
         </div>
       )}
       {!showEvents && (
         <div>
-          <button onClick={() => setShowEvents(true)}>show events</button>
+          <button onClick={() => setShowEvents(true)}>Show Events</button>
         </div>
       )}
       {showEvents && <EventList events={events} handleClick={handleClick}/>}
 
-      {showModal && <Modal handleClose={handleClose} isSalesModal={false}>
+      {showModal && <Modal handleClose={handleClose} isSalesModal={true}>
         <h2>Terms and Conditions</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae turpis facilisis mi luctus dignissim. 
           Donec congue eget risus a interdum. Ut eget ex vestibulum, tristique orci sit amet, euismod nunc. Nulla ut congue purus. Aliquam sit amet sagittis dui. Pellentesque tortor urna, tincidunt nec pellentesque a,
