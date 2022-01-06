@@ -13,7 +13,6 @@ function App() {
     {title: "bowser's live stream", id: 2},
     {title: "race on moo moo farm", id: 3}
   ])
-
   console.log(showModal)
 
   const handleClick = (id) => {
@@ -47,7 +46,7 @@ function App() {
       )}
       {showEvents && <EventList events={events} handleClick={handleClick}/>}
 
-      {showModal && <Modal handleClose={handleClose}>
+      {showModal && <Modal handleClose={handleClose} isSalesModal={false}>
         <h2>Terms and Conditions</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae turpis facilisis mi luctus dignissim. 
           Donec congue eget risus a interdum. Ut eget ex vestibulum, tristique orci sit amet, euismod nunc. Nulla ut congue purus. Aliquam sit amet sagittis dui. Pellentesque tortor urna, tincidunt nec pellentesque a,
